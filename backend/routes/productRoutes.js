@@ -1,16 +1,15 @@
 // import express from "express";
 const express = require("express");
-
 const router = express.Router();
 
-// Route to create new user
+// Create new product
 router.post("/create", (req, res) => {
-	res.send(`User created`);
+	res.send(`Product created`);
 });
 
 // Route to get all users, registerd in Store.
 router.get("/get", (req, res) => {
-	res.send(`Received get user request on server`);
+	res.send(`Get all prodcuts from db`);
 });
 
 export default router;
